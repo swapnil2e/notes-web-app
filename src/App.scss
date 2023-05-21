@@ -1,0 +1,35 @@
+@mixin  flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body
+{
+    @include flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ececec;
+    transition: all 0.3s;
+    button
+    {
+        outline: none;
+    }
+}
+#root
+{
+    @include flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
